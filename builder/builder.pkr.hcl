@@ -8,3 +8,7 @@ packer {
 }
 
 source "virtualbox-iso" "vbox_guest" {}
+
+build {
+  sources = ["sources.virtualbox-iso.vbox_guest"]
+}
