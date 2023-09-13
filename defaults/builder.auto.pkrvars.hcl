@@ -6,7 +6,7 @@
 # - Boot Configuration - #
 #------------------------#
 boot_command                 = []
-boot_keygroup_interval       = "5s"
+boot_keygroup_interval       = ""
 boot_wait                    = "10s"
 
 # - CD Configuration - #
@@ -45,7 +45,7 @@ ssh_certificate_file         = ""
 ssh_ciphers                  = ["aes128-gcm@openssh.com", "chacha20-poly1305@openssh.com", "aes128-ctr", "aes192-ctr", "aes256-ctr"]
 ssh_clear_authorized_keys    = false
 ssh_disable_agent_forwarding = false
-ssh_file_transfer_method     = "sftp"
+ssh_file_transfer_method     = "scp"
 ssh_handshake_attempts       = 10
 ssh_keep_alive_interval      = "5s"
 ssh_key_exchange_algorithms  = []
@@ -58,7 +58,7 @@ ssh_proxy_username           = ""
 ssh_pty                      = false
 ssh_read_write_timeout       = ""
 ssh_remote_tunnels           = []
-ssh_timeout                  = "30m"
+ssh_timeout                  = "5m"
 
 # - WinRM - #
 #-----------#
@@ -121,17 +121,17 @@ vm_name                      = ""
 http_bind_address            = "0.0.0.0"
 http_content                 = {}
 http_directory               = ""
-http_port_max                = 8080
-http_port_min                = 8000
+http_port_max                = 8000
+http_port_min                = 9000
 
 # - ISO Configuration - #
 #-----------------------#
-iso_checksum                 = "file:https://linux.oracle.com/security/gpg/checksum/OracleLinux-R9-U2-Server-x86_64.checksum"
-iso_url                      = "https://yum.oracle.com/ISOS/OracleLinux/OL9/u2/x86_64/OracleLinux-R9-U2-x86_64-dvd.iso"
+iso_checksum                 = ""
+iso_url                      = ""
 
 # - Output Configuration - #
 #--------------------------#
-output_directory             = "source/"
+output_directory             = "build/"
 output_filename              = ""
 
 # - Run Configuration - #
