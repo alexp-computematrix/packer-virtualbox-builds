@@ -6,6 +6,10 @@
 # - Communicator Configuration - #
 #--------------------------------#
 
+# - Common - #
+#------------#
+communicator                 = "winrm"
+
 # - WinRM - #
 #-----------#
 winrm_timeout                = "1h"
